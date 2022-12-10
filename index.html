@@ -1,0 +1,2754 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Playground</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body{
+    text-transform: capitalize;
+    background-color: aliceblue;
+    font-size: large;
+    font-family: 'Poppins','Segoe UI',cursive;
+}
+ 
+
+
+
+
+
+
+
+
+
+a{
+    text-decoration: none;
+}
+.navbar{
+    padding:25px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: rgb(0, 0, 0);
+    transition: 1s;
+}
+.navbar:hover{
+    background-color: rgb(50,50,50);
+}
+.navbar .logo{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    color:white;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+}
+.navbar .list .navbar-list{
+    display:flex;
+    list-style-type: none;
+    color:white;
+    text-align: center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    justify-content: center;
+    align-items: center;
+}
+.navbar .list .navbar-list a{
+
+    color:white;
+    text-align: center;
+    font-size: 25px;
+    padding:5px 15px;
+    transition-duration: 1s;
+
+}
+.navbar .list .navbar-list a:hover{
+     color:darkgoldenrod;
+     font-size: 30px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     transition:ease-in ;
+
+}
+i{
+    font-size: 25px;
+    color:grey;
+}
+.navbar .search {
+    text-align: center;
+}
+
+.navbar .search i{
+    padding:5px 5px;
+    transition-duration:1s ;
+}
+.navbar .search i:hover{
+    font-size: larger;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+.foot {
+    height:350px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(107, 173, 230);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+/* footer is originally written from scratch */
+.foot div{
+    padding:50px;
+}
+.foot .container1 h3:hover{
+    font-size: larger;
+}
+.foot .container1 .icon i{
+    font-size: 27px;
+    padding:5px 7.5px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    transition: 1s;
+}
+
+.foot .container1 .icon i:hover{
+    font-weight: bolder;
+    font-size: 30px;
+}
+.foot h3{
+    color:rgb(3, 3, 31);
+}
+.foot .container1 .contact {
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font-weight: bold;
+    color: rgb(3, 3, 31);
+}
+
+
+
+
+
+
+
+
+
+
+.foot .container1 .contact {
+    font-weight: bold;
+    color: rgb(3, 3, 31);
+}
+
+.foot .container1 .icon .a {
+    color: black;
+}
+
+.foot .container2 ul {
+    list-style-type: none;
+}
+
+.foot .container3 ul {
+    list-style-type: none;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+#nac{
+    display: flex;
+
+}
+#nav2 submit{
+    border:.5px solid black;
+    color:blue;
+    padding:30px;
+}
+#nav2{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: white;
+}
+#nav2 div{
+    display: flex;
+    background-color:white;
+    border:1px solid black;
+}
+#nav2 h3{
+    padding:20px;
+    font-size: smaller;
+}
+#blogs{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+
+
+
+
+
+
+
+
+
+
+
+
+
+    column-gap: 20px;;
+    margin:20px;
+    row-gap: 60px;
+    align-items: center;
+    margin-top: 70px;;
+
+
+
+
+
+
+
+
+
+
+
+
+
+    padding:50px;
+}
+.finalsubmit{   
+    padding:10px;
+    background-color: blue;
+
+
+
+
+
+
+
+
+
+
+
+    border-radius: 10%;
+    margin-top:15px;
+    color:white;
+
+
+
+
+
+
+
+
+
+
+
+
+}
+ .fa-docker{
+    color:blue;
+    padding-top:30px;
+    padding-left:30px;
+}
+
+
+
+
+
+
+
+
+
+
+.dot{
+    margin-left:70%;
+}
+#blogs div{
+    background-color: white;
+
+
+
+
+
+
+
+
+
+
+
+
+
+    transition: 2s;
+    text-align: center;
+}
+.submit{
+    background-color: aquamarine;
+    padding:10px;
+    margin-top: 30px;;
+
+
+
+
+
+
+
+
+
+
+
+
+}
+#blogs div:hover{
+        transform: scale(1.05 );
+}
+#expand{
+    grid-row-start:1;
+    grid-row-end: 4;
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font-size: 13px;
+}
+#extra{
+    background-color:lightblue;
+    text-align: center;
+    align-items: center;
+    border-radius: 10%;
+
+
+
+
+
+
+
+
+
+    margin-bottom: 50px;
+    margin-top: -70px;;
+    font-size: smaller;
+    font-weight:lighter;
+    font-size: 20px;;
+
+
+
+
+
+    padding: 30px;
+    
+    
+
+}
+p{
+    font-size: 13px;
+    color:darkgray;
+}
+#another{
+  padding:30px;
+  display: grid;
+  column-gap: 30px;
+  margin:30px;
+  grid-template-columns: repeat(2,1fr);
+}
+#another section{
+    margin-bottom: 10px;
+    background-color: white;;
+    transition: 2s;
+
+
+
+
+
+
+
+}
+#another div{
+    display:flex;
+}
+#another span{
+    display:grid;
+    margin:20px;
+}
+#ll{
+    display:grid;
+
+
+
+
+
+
+
+
+
+
+
+
+    grid-template-columns: repeat(2,1fr);
+}
+#ll span{
+    display:flex;
+    margin-left:100px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+#table{
+    padding:20px;
+}
+
+
+
+
+
+
+
+
+
+#another section:hover{
+    background-color: orange;
+}
+.last{
+    margin: 30px;
+    padding:10px;   
+}
+.akk{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header class="text-gray-600 body-font">
+
+
+
+
+
+
+
+
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">Milao</span>
+          </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-gray-900">Search naukri</a>
+            <a class="mr-5 hover:text-gray-900">Campany Review</a>
+            <a class="mr-5 hover:text-gray-900">Find salaries</a>
+          </nav>
+
+
+
+
+
+
+
+
+          <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </header>
+    <section id="nav2">
+        <div>
+
+
+
+
+
+
+        <i class="fa fa-magnifying-glass" style="color:blue;padding:20px;"></i>
+        <input type="text" value="Product">
+        <input type="text" value="ui-designer"></div>
+        <div>
+            <i class="fa-solid fa-location-dot" style="padding:20px;"></i></i>
+        
+            <h3>new delhi</h3>
+        </div>
+        <div>
+            <i class="fa fa-magnifying-glass" style="color:blue;padding:20px;"></i>
+        
+            <h3>job type</h3>
+        </div>
+        <div>
+            <i class="fa fa-magnifying-glass" style="color:blue;padding:20px;"></i>
+        
+            <h3>salary range</h3>
+        </div>
+        <div style="background-color:blue">
+            <h3>find job</h3>
+        </div>
+    </section>
+    <section id="blogs">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+        <div>
+            <i class="fa-brands fa-docker"></i>
+<span class="dot">...</span>
+            <h3>ui/ux designer</h3>
+          <p>Lorem, ipsum dolor sit amet  eum atque dignissimos nostrum, sed quidem repudiandae magni autem ipsum fugit debitis! Labore suscipit molestias cum, plac</p>  
+        
+        <div>
+            <input type="submit" class="submit" value="full time">
+            <input type="submit" class="submit" value="min 1 year">
+            <input type="submit" class="submit" value="senior level">
+    </div>
+    <input type="submit" class="finalsubmit" value="ApplyNow">
+    <input type="submit" class="finalsubmit" value="messages">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</div>
+<div>
+    <i class="fa-brands fa-paypal"></i>
+    <span class="dot">...</span>
+    <h3>ui/ux designer</h3>
+  <p>Lorem, ipsum dolor sit amet  eum atque dignissimos nostrum, sed quidem repudiandae magni autem ipsum fugit debitis! Labore suscipit molestias cum, plac</p>  
+<div>
+    <input type="submit" class="submit" value="full time">
+    <input type="submit" class="submit" value="min 1 year">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <input type="submit" class="submit" value="senior level">
+</div>
+<input type="submit" class="finalsubmit" value="ApplyNow">
+<input type="submit" class="finalsubmit" value="messages">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>
+    <i class="fa-brands fa-square-twitter"></i>
+    <span class="dot">...</span>
+    <h3>ui/ux designer</h3>
+  <p>Lorem, ipsum dolor sit amet  eum atque dignissimos nostrum, sed quidem repudiandae magni autem ipsum fugit debitis! Labore suscipit molestias cum, plac</p>  
+
+<div>
+    <input type="submit" class="submit" value="full time">
+    <input type="submit" class="submit" value="min 1 year">
+    <input type="submit" class="submit" value="senior level">
+</div>
+<input type="submit" class="finalsubmit" value="ApplyNow">
+
+<button onclick="myFunc()">Click me</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+    function myFunc() {
+        window.location.href = "#nav2";
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</div>
+<div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <i class="fa-brands fa-docker"></i>
+    <span class="dot">...</span>
+    <h3>ui/ux designer</h3>
+  <p>Lorem, ipsum dolor sit amet  eum atque dignissimos nostrum, sed quidem repudiandae magni autem ipsum fugit debitis! Labore suscipit molestias cum, plac</p>  
+<div>
+    <input type="submit" class="submit" value="full time">
+    <input type="submit" class="submit" value="min 1 year">
+    <input type="submit" class="submit" value="senior level">
+</div>
+<input type="submit" class="finalsubmit" value="ApplyNow">
+<input type="submit" class="finalsubmit" value="messages">
+</div>
+<div>
+    <i class="fa-brands fa-docker"></i>
+    <span class="dot">...</span>
+    <h3>ui/ux designer</h3>
+  <p>Lorem, ipsum dolor sit amet  eum atque dignissimos nostrum, sed quidem repudiandae magni autem ipsum fugit debitis! Labore suscipit molestias cum, plac</p>  
+<div>
+    <input type="submit" class="submit" value="full time">
+    <input type="submit" class="submit" value="min 1 year">
+    <input type="submit" class="submit" value="senior level">
+</div>
+<input type="submit" class="finalsubmit" value="ApplyNow">
+<input type="submit" class="finalsubmit" value="messages">
+</div>
+<div>
+    <i class="fa-brands fa-docker"></i>
+    <span class="dot">...</span>
+    <h3>ui/ux designer</h3>
+  <p>Lorem, ipsum dolor sit amet  eum atque dignissimos nostrum, sed quidem repudiandae magni autem ipsum fugit debitis! Labore suscipit molestias cum, plac</p>  
+<div>
+<input type="submit" class="submit" value="full time">
+<input type="submit" class="submit" value="min 1 year">
+<input type="submit" class="submit" value="senior level">
+</div>
+<input type="submit" class="finalsubmit" value="ApplyNow">
+<button onclick="myFunc()">Click me</button>
+    <script>
+    function myFunc() {
+        window.location.href = "#nav2";
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    }
+    </script>
+</div>
+</section>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Playground</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body{
+    text-transform: capitalize;
+    background-color: aliceblue;
+    font-size: large;
+    font-family: 'Poppins','Segoe UI',cursive;
+}
+ 
+
+
+
+
+
+
+
+
+
+a{
+    text-decoration: none;
+}
+.navbar{
+    padding:25px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: rgb(0, 0, 0);
+    transition: 1s;
+}
+.navbar:hover{
+    background-color: rgb(50,50,50);
+}
+.navbar .logo{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    color:white;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+}
+.navbar .list .navbar-list{
+    display:flex;
+    list-style-type: none;
+    color:white;
+    text-align: center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    justify-content: center;
+    align-items: center;
+}
+.navbar .list .navbar-list a{
+
+    color:white;
+    text-align: center;
+    font-size: 25px;
+    padding:5px 15px;
+    transition-duration: 1s;
+
+}
+.navbar .list .navbar-list a:hover{
+     color:darkgoldenrod;
+     font-size: 30px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     transition:ease-in ;
+
+}
+i{
+    font-size: 25px;
+    color:grey;
+}
+.navbar .search {
+    text-align: center;
+}
+
+.navbar .search i{
+    padding:5px 5px;
+    transition-duration:1s ;
+}
+.navbar .search i:hover{
+    font-size: larger;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+.foot {
+    height:350px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(107, 173, 230);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+/* footer is originally written from scratch */
+.foot div{
+    padding:50px;
+}
+.foot .container1 h3:hover{
+    font-size: larger;
+}
+.foot .container1 .icon i{
+    font-size: 27px;
+    padding:5px 7.5px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    transition: 1s;
+}
+
+.foot .container1 .icon i:hover{
+    font-weight: bolder;
+    font-size: 30px;
+}
+.foot h3{
+    color:rgb(3, 3, 31);
+}
+.foot .container1 .contact {
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font-weight: bold;
+    color: rgb(3, 3, 31);
+}
+
+
+
+
+
+
+
+
+
+
+.foot .container1 .contact {
+    font-weight: bold;
+    color: rgb(3, 3, 31);
+}
+
+.foot .container1 .icon .a {
+    color: black;
+}
+
+.foot .container2 ul {
+    list-style-type: none;
+}
+
+.foot .container3 ul {
+    list-style-type: none;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+#nac{
+    display: flex;
+
+}
+#nav2 submit{
+    border:.5px solid black;
+    color:blue;
+    padding:30px;
+}
+#nav2{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: white;
+}
+#nav2 div{
+    display: flex;
+    background-color:white;
+    border:1px solid black;
+}
+#nav2 h3{
+    padding:20px;
+    font-size: smaller;
+}
+#blogs{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+
+
+
+
+
+
+
+
+
+
+
+
+
+    column-gap: 20px;;
+    margin:20px;
+    row-gap: 60px;
+    align-items: center;
+    margin-top: 70px;;
+
+
+
+
+
+
+
+
+
+
+
+
+
+    padding:50px;
+}
+.finalsubmit{   
+    padding:10px;
+    background-color: blue;
+
+
+
+
+
+
+
+
+
+
+
+    border-radius: 10%;
+    margin-top:15px;
+    color:white;
+
+
+
+
+
+
+
+
+
+
+
+
+}
+ .fa-docker{
+    color:blue;
+    padding-top:30px;
+    padding-left:30px;
+}
+
+
+
+
+
+
+
+
+
+
+.dot{
+    margin-left:70%;
+}
+#blogs div{
+    background-color: white;
+
+
+
+
+
+
+
+
+
+
+
+
+
+    transition: 2s;
+    text-align: center;
+}
+.submit{
+    background-color: aquamarine;
+    padding:10px;
+    margin-top: 30px;;
+
+
+
+
+
+
+
+
+
+
+
+
+}
+#blogs div:hover{
+        transform: scale(1.05 );
+}
+#expand{
+    grid-row-start:1;
+    grid-row-end: 4;
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font-size: 13px;
+}
+#extra{
+    background-color:lightblue;
+    text-align: center;
+    align-items: center;
+    border-radius: 10%;
+
+
+
+
+
+
+
+
+
+    margin-bottom: 50px;
+    margin-top: -70px;;
+    font-size: smaller;
+    font-weight:lighter;
+    font-size: 20px;;
+
+
+
+
+
+    padding: 30px;
+    
+    
+
+}
+p{
+    font-size: 13px;
+    color:darkgray;
+}
+#another{
+  padding:30px;
+  display: grid;
+  column-gap: 30px;
+  margin:30px;
+  grid-template-columns: repeat(2,1fr);
+}
+#another section{
+    margin-bottom: 10px;
+    background-color: white;;
+    transition: 2s;
+
+
+
+
+
+
+
+}
+#another div{
+    display:flex;
+}
+#another span{
+    display:grid;
+    margin:20px;
+}
+#ll{
+    display:grid;
+
+
+
+
+
+
+
+
+
+
+
+
+    grid-template-columns: repeat(2,1fr);
+}
+#ll span{
+    display:flex;
+    margin-left:100px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+#table{
+    padding:20px;
+}
+
+
+
+
+
+
+
+
+
+#another section:hover{
+    background-color: orange;
+}
+.last{
+    margin: 30px;
+    padding:10px;   
+}
+.akk{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header class="text-gray-600 body-font">
+
+
+
+
+
+
+
+
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">Milao</span>
+          </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-gray-900">Search naukri</a>
+            <a class="mr-5 hover:text-gray-900">Campany Review</a>
+            <a class="mr-5 hover:text-gray-900">Find salaries</a>
+          </nav>
+
+
+
+
+
+
+
+
+          <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </header>
+    <section id="nav2">
+        <div>
+
+
+
+
+
+
+        <i class="fa fa-magnifying-glass" style="color:blue;padding:20px;"></i>
+        <input type="text" value="Product">
+        <input type="text" value="ui-designer"></div>
+        <div>
+            <i class="fa-solid fa-location-dot" style="padding:20px;"></i></i>
+        
+            <h3>new delhi</h3>
+        </div>
+        <div>
+            <i class="fa fa-magnifying-glass" style="color:blue;padding:20px;"></i>
+        
+            <h3>job type</h3>
+        </div>
+        <div>
+            <i class="fa fa-magnifying-glass" style="color:blue;padding:20px;"></i>
+        
+            <h3>salary range</h3>
+        </div>
+        <div style="background-color:blue">
+            <h3>find job</h3>
+        </div>
+    </section>
+    <section id="blogs">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+        <div>
+            <i class="fa-brands fa-docker"></i>
+<span class="dot">...</span>
+            <h3>ui/ux designer</h3>
+          <p>Lorem, ipsum dolor sit amet  eum atque dignissimos nostrum, sed quidem repudiandae magni autem ipsum fugit debitis! Labore suscipit molestias cum, plac</p>  
+        
+        <div>
+            <input type="submit" class="submit" value="full time">
+            <input type="submit" class="submit" value="min 1 year">
+            <input type="submit" class="submit" value="senior level">
+    </div>
+    <input type="submit" class="finalsubmit" value="ApplyNow">
+    <input type="submit" class="finalsubmit" value="messages">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</div>
+<div>
+    <i class="fa-brands fa-paypal"></i>
+    <span class="dot">...</span>
+    <h3>ui/ux designer</h3>
+  <p>Lorem, ipsum dolor sit amet  eum atque dignissimos nostrum, sed quidem repudiandae magni autem ipsum fugit debitis! Labore suscipit molestias cum, plac</p>  
+<div>
+    <input type="submit" class="submit" value="full time">
+    <input type="submit" class="submit" value="min 1 year">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <input type="submit" class="submit" value="senior level">
+</div>
+<input type="submit" class="finalsubmit" value="ApplyNow">
+<input type="submit" class="finalsubmit" value="messages">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>
+    <i class="fa-brands fa-square-twitter"></i>
+    <span class="dot">...</span>
+    <h3>ui/ux designer</h3>
+  <p>Lorem, ipsum dolor sit amet  eum atque dignissimos nostrum, sed quidem repudiandae magni autem ipsum fugit debitis! Labore suscipit molestias cum, plac</p>  
+
+<div>
+    <input type="submit" class="submit" value="full time">
+    <input type="submit" class="submit" value="min 1 year">
+    <input type="submit" class="submit" value="senior level">
+</div>
+<input type="submit" class="finalsubmit" value="ApplyNow">
+
+<button onclick="myFunc()">Click me</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+    function myFunc() {
+        window.location.href = "#nav2";
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</div>
+<div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <i class="fa-brands fa-docker"></i>
+    <span class="dot">...</span>
+    <h3>ui/ux designer</h3>
+  <p>Lorem, ipsum dolor sit amet  eum atque dignissimos nostrum, sed quidem repudiandae magni autem ipsum fugit debitis! Labore suscipit molestias cum, plac</p>  
+<div>
+    <input type="submit" class="submit" value="full time">
+    <input type="submit" class="submit" value="min 1 year">
+    <input type="submit" class="submit" value="senior level">
+</div>
+<input type="submit" class="finalsubmit" value="ApplyNow">
+<input type="submit" class="finalsubmit" value="messages">
+</div>
+<div>
+    <i class="fa-brands fa-docker"></i>
+    <span class="dot">...</span>
+    <h3>ui/ux designer</h3>
+  <p>Lorem, ipsum dolor sit amet  eum atque dignissimos nostrum, sed quidem repudiandae magni autem ipsum fugit debitis! Labore suscipit molestias cum, plac</p>  
+<div>
+    <input type="submit" class="submit" value="full time">
+    <input type="submit" class="submit" value="min 1 year">
+    <input type="submit" class="submit" value="senior level">
+</div>
+<input type="submit" class="finalsubmit" value="ApplyNow">
+<input type="submit" class="finalsubmit" value="messages">
+</div>
+<div>
+    <i class="fa-brands fa-docker"></i>
+    <span class="dot">...</span>
+    <h3>ui/ux designer</h3>
+  <p>Lorem, ipsum dolor sit amet  eum atque dignissimos nostrum, sed quidem repudiandae magni autem ipsum fugit debitis! Labore suscipit molestias cum, plac</p>  
+<div>
+<input type="submit" class="submit" value="full time">
+<input type="submit" class="submit" value="min 1 year">
+<input type="submit" class="submit" value="senior level">
+</div>
+<input type="submit" class="finalsubmit" value="ApplyNow">
+<button onclick="myFunc()">Click me</button>
+    <script>
+    function myFunc() {
+        window.location.href = "#nav2";
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+    </script>
+</div>
+</section>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Playground</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body{
+    text-transform: capitalize;
+    background-color: aliceblue;
+    font-size: large;
+    font-family: 'Poppins','Segoe UI',cursive;
+}
+ 
+
+
+
+
+
+
+
+
+
+a{
+    text-decoration: none;
+}
+.navbar{
+    padding:25px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: rgb(0, 0, 0);
+    transition: 1s;
+}
+.navbar:hover{
+    background-color: rgb(50,50,50);
+}
+.navbar .logo{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    color:white;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+}
+.navbar .list .navbar-list{
+    display:flex;
+    list-style-type: none;
+    color:white;
+    text-align: center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    justify-content: center;
+    align-items: center;
+}
+.navbar .list .navbar-list a{
+
+    color:white;
+    text-align: center;
+    font-size: 25px;
+    padding:5px 15px;
+    transition-duration: 1s;
+
+}
+.navbar .list .navbar-list a:hover{
+     color:darkgoldenrod;
+     font-size: 30px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     transition:ease-in ;
+
+}
+i{
+    font-size: 25px;
+    color:grey;
+}
+.navbar .search {
+    text-align: center;
+}
+
+.navbar .search i{
+    padding:5px 5px;
+    transition-duration:1s ;
+}
+.navbar .search i:hover{
+    font-size: larger;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+.foot {
+    height:350px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(107, 173, 230);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+/* footer is originally written from scratch */
+.foot div{
+    padding:50px;
+}
+.foot .container1 h3:hover{
+    font-size: larger;
+}
+.foot .container1 .icon i{
+    font-size: 27px;
+    padding:5px 7.5px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    transition: 1s;
+}
+
+.foot .container1 .icon i:hover{
+    font-weight: bolder;
+    font-size: 30px;
+}
+.foot h3{
+    color:rgb(3, 3, 31);
+}
+.foot .container1 .contact {
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font-weight: bold;
+    color: rgb(3, 3, 31);
+}
+
+
+
+
+
+
+
+
+
+
+.foot .container1 .contact {
+    font-weight: bold;
+    color: rgb(3, 3, 31);
+}
+
+.foot .container1 .icon .a {
+    color: black;
+}
+
+.foot .container2 ul {
+    list-style-type: none;
+}
+
+.foot .container3 ul {
+    list-style-type: none;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+#nac{
+    display: flex;
+
+}
+#nav2 submit{
+    border:.5px solid black;
+    color:blue;
+    padding:30px;
+}
+#nav2{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: white;
+}
+#nav2 div{
+    display: flex;
+    background-color:white;
+    border:1px solid black;
+}
+#nav2 h3{
+    padding:20px;
+    font-size: smaller;
+}
+#blogs{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+
+
+
+
+
+
+
+
+
+
+
+
+
+    column-gap: 20px;;
+    margin:20px;
+    row-gap: 60px;
+    align-items: center;
+    margin-top: 70px;;
+
+
+
+
+
+
+
+
+
+
+
+
+
+    padding:50px;
+}
+.finalsubmit{   
+    padding:10px;
+    background-color: blue;
+
+
+
+
+
+
+
+
+
+
+
+    border-radius: 10%;
+    margin-top:15px;
+    color:white;
+
+
+
+
+
+
+
+
+
+
+
+
+}
+ .fa-docker{
+    color:blue;
+    padding-top:30px;
+    padding-left:30px;
+}
+
+
+
+
+
+
+
+
+
+
+.dot{
+    margin-left:70%;
+}
+#blogs div{
+    background-color: white;
+
+
+
+
+
+
+
+
+
+
+
+
+
+    transition: 2s;
+    text-align: center;
+}
+.submit{
+    background-color: aquamarine;
+    padding:10px;
+    margin-top: 30px;;
+
+
+
+
+
+
+
+
+
+
+
+
+}
+#blogs div:hover{
+        transform: scale(1.05 );
+}
+#expand{
+    grid-row-start:1;
+    grid-row-end: 4;
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font-size: 13px;
+}
+#extra{
+    background-color:lightblue;
+    text-align: center;
+    align-items: center;
+    border-radius: 10%;
+
+
+
+
+
+
+
+
+
+    margin-bottom: 50px;
+    margin-top: -70px;;
+    font-size: smaller;
+    font-weight:lighter;
+    font-size: 20px;;
+
+
+
+
+
+    padding: 30px;
+    
+    
+
+}
+p{
+    font-size: 13px;
+    color:darkgray;
+}
+#another{
+  padding:30px;
+  display: grid;
+  column-gap: 30px;
+  margin:30px;
+  grid-template-columns: repeat(2,1fr);
+}
+#another section{
+    margin-bottom: 10px;
+    background-color: white;;
+    transition: 2s;
+
+
+
+
+
+
+
+}
+#another div{
+    display:flex;
+}
+#another span{
+    display:grid;
+    margin:20px;
+}
+#ll{
+    display:grid;
+
+
+
+
+
+
+
+
+
+
+
+
+    grid-template-columns: repeat(2,1fr);
+}
+#ll span{
+    display:flex;
+    margin-left:100px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+#table{
+    padding:20px;
+}
+
+
+
+
+
+
+
+
+
+#another section:hover{
+    background-color: orange;
+}
+.last{
+    margin: 30px;
+    padding:10px;   
+}
+.akk{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header class="text-gray-600 body-font">
+
+
+
+
+
+
+
+
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">Milao</span>
+          </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-gray-900">Search naukri</a>
+            <a class="mr-5 hover:text-gray-900">Campany Review</a>
+            <a class="mr-5 hover:text-gray-900">Find salaries</a>
+          </nav>
+
+
+
+
+
+
+
+
+          <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </header>
+    <section id="nav2">
+        <div>
+
+
+
+
+
+
+        <i class="fa fa-magnifying-glass" style="color:blue;padding:20px;"></i>
+        <input type="text" value="Product">
+        <input type="text" value="ui-designer"></div>
+        <div>
+            <i class="fa-solid fa-location-dot" style="padding:20px;"></i></i>
+        
+            <h3>new delhi</h3>
+        </div>
+        <div>
+            <i class="fa fa-magnifying-glass" style="color:blue;padding:20px;"></i>
+        
+            <h3>job type</h3>
+        </div>
+        <div>
+            <i class="fa fa-magnifying-glass" style="color:blue;padding:20px;"></i>
+        
+            <h3>salary range</h3>
+        </div>
+        <div style="background-color:blue">
+            <h3>find job</h3>
+        </div>
+    </section>
+    <section id="blogs">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+        <div>
+            <i class="fa-brands fa-docker"></i>
+<span class="dot">...</span>
+            <h3>ui/ux designer</h3>
+          <p>Lorem, ipsum dolor sit amet  eum atque dignissimos nostrum, sed quidem repudiandae magni autem ipsum fugit debitis! Labore suscipit molestias cum, plac</p>  
+        
+        <div>
+            <input type="submit" class="submit" value="full time">
+            <input type="submit" class="submit" value="min 1 year">
+            <input type="submit" class="submit" value="senior level">
+    </div>
+    <input type="submit" class="finalsubmit" value="ApplyNow">
+    <input type="submit" class="finalsubmit" value="messages">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</div>
+<div>
+    <i class="fa-brands fa-paypal"></i>
+    <span class="dot">...</span>
+    <h3>ui/ux designer</h3>
+  <p>Lorem, ipsum dolor sit amet  eum atque dignissimos nostrum, sed quidem repudiandae magni autem ipsum fugit debitis! Labore suscipit molestias cum, plac</p>  
+<div>
+    <input type="submit" class="submit" value="full time">
+    <input type="submit" class="submit" value="min 1 year">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <input type="submit" class="submit" value="senior level">
+</div>
+<input type="submit" class="finalsubmit" value="ApplyNow">
+<input type="submit" class="finalsubmit" value="messages">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>
+    <i class="fa-brands fa-square-twitter"></i>
+    <span class="dot">...</span>
+    <h3>ui/ux designer</h3>
+  <p>Lorem, ipsum dolor sit amet  eum atque dignissimos nostrum, sed quidem repudiandae magni autem ipsum fugit debitis! Labore suscipit molestias cum, plac</p>  
+
+<div>
+    <input type="submit" class="submit" value="full time">
+    <input type="submit" class="submit" value="min 1 year">
+    <input type="submit" class="submit" value="senior level">
+</div>
+<input type="submit" class="finalsubmit" value="ApplyNow">
+
+<button onclick="myFunc()">Click me</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+    function myFunc() {
+        window.location.href = "#nav2";
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</div>
+<div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <i class="fa-brands fa-docker"></i>
+    <span class="dot">...</span>
+    <h3>ui/ux designer</h3>
+  <p>Lorem, ipsum dolor sit amet  eum atque dignissimos nostrum, sed quidem repudiandae magni autem ipsum fugit debitis! Labore suscipit molestias cum, plac</p>  
+<div>
+    <input type="submit" class="submit" value="full time">
+    <input type="submit" class="submit" value="min 1 year">
+    <input type="submit" class="submit" value="senior level">
+</div>
+<input type="submit" class="finalsubmit" value="ApplyNow">
+<input type="submit" class="finalsubmit" value="messages">
+</div>
+<div>
+    <i class="fa-brands fa-docker"></i>
+    <span class="dot">...</span>
+    <h3>ui/ux designer</h3>
+  <p>Lorem, ipsum dolor sit amet  eum atque dignissimos nostrum, sed quidem repudiandae magni autem ipsum fugit debitis! Labore suscipit molestias cum, plac</p>  
+<div>
+    <input type="submit" class="submit" value="full time">
+    <input type="submit" class="submit" value="min 1 year">
+    <input type="submit" class="submit" value="senior level">
+</div>
+<input type="submit" class="finalsubmit" value="ApplyNow">
+<input type="submit" class="finalsubmit" value="messages">
+</div>
+<div>
+    <i class="fa-brands fa-docker"></i>
+    <span class="dot">...</span>
+    <h3>ui/ux designer</h3>
+  <p>Lorem, ipsum dolor sit amet  eum atque dignissimos nostrum, sed quidem repudiandae magni autem ipsum fugit debitis! Labore suscipit molestias cum, plac</p>  
+<div>
+<input type="submit" class="submit" value="full time">
+<input type="submit" class="submit" value="min 1 year">
+<input type="submit" class="submit" value="senior level">
+</div>
+<input type="submit" class="finalsubmit" value="ApplyNow">
+<button onclick="myFunc()">Click me</button>
+    <script>
+    function myFunc() {
+        window.location.href = "#nav2";
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    }
+    </script>
+</div>
+</section>
+</body>
+</html> -->
